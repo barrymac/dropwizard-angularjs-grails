@@ -90,6 +90,8 @@
           <root url="jar://$USER_HOME$/.grails/ivy-cache/com.yammer.dropwizard/dropwizard-views/jars/dropwizard-views-0.6.1.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/com.yammer.metrics/metrics-jersey/jars/metrics-jersey-2.2.0.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.freemarker/freemarker/jars/freemarker-2.3.19.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/com.google.code.gson/gson/jars/gson-2.2.2.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.liquibase/liquibase-core/jars/liquibase-core-2.0.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

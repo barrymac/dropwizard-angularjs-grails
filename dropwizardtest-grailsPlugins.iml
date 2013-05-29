@@ -9,9 +9,12 @@
     <facet type="web" name="GrailsWeb">
       <configuration>
         <webroots>
-          <root url="file://$MODULE_DIR$/target/plugins/jquery-1.8.0/web-app" relative="/" />
           <root url="file://$MODULE_DIR$/target/plugins/angular-scaffolding-1.0-SNAPSHOT/web-app" relative="/" />
           <root url="file://$MODULE_DIR$/target/plugins/angular-scaffolding-1.0-SNAPSHOT/grails-app/views" relative="/" />
+          <root url="file://$MODULE_DIR$/target/plugins/jquery-1.8.3/web-app" relative="/" />
+          <root url="file://$MODULE_DIR$/target/plugins/zipped-resources-1.0/web-app" relative="/" />
+          <root url="file://$MODULE_DIR$/target/plugins/zipped-resources-1.0/grails-app/views" relative="/" />
+          <root url="file://$MODULE_DIR$/target/plugins/database-migration-1.3.2/grails-app/views" relative="/" />
         </webroots>
         <sourceRoots />
       </configuration>
@@ -20,26 +23,36 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$/target/plugins/angular-scaffolding-1.0-SNAPSHOT" />
+    <content url="file://$MODULE_DIR$/target/plugins/database-migration-1.3.2">
+      <sourceFolder url="file://$MODULE_DIR$/target/plugins/database-migration-1.3.2/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/plugins/database-migration-1.3.2/grails-app/controllers" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/target/plugins/dropwizard-0.1">
       <sourceFolder url="file://$MODULE_DIR$/target/plugins/dropwizard-0.1/src/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/plugins/dropwizard-0.1/src/groovy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/plugins/dropwizard-0.1/grails-app/services" isTestSource="false" />
     </content>
-    <content url="file://$MODULE_DIR$/target/plugins/hibernate-2.0.4" />
-    <content url="file://$MODULE_DIR$/target/plugins/jquery-1.8.0">
-      <sourceFolder url="file://$MODULE_DIR$/target/plugins/jquery-1.8.0/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/plugins/jquery-1.8.0/grails-app/i18n" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/plugins/jquery-1.8.0/grails-app/services" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/plugins/jquery-1.8.0/grails-app/taglib" isTestSource="false" />
+    <content url="file://$MODULE_DIR$/target/plugins/gson-1.1.4">
+      <sourceFolder url="file://$MODULE_DIR$/target/plugins/gson-1.1.4/src/groovy" isTestSource="false" />
     </content>
-    <content url="file://$MODULE_DIR$/target/plugins/resources-1.1.6">
-      <sourceFolder url="file://$MODULE_DIR$/target/plugins/resources-1.1.6/src/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/plugins/resources-1.1.6/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/plugins/resources-1.1.6/grails-app/i18n" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/plugins/resources-1.1.6/grails-app/taglib" isTestSource="false" />
+    <content url="file://$MODULE_DIR$/target/plugins/hibernate-2.0.4" />
+    <content url="file://$MODULE_DIR$/target/plugins/jquery-1.8.3">
+      <sourceFolder url="file://$MODULE_DIR$/target/plugins/jquery-1.8.3/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/plugins/jquery-1.8.3/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/plugins/jquery-1.8.3/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/plugins/jquery-1.8.3/grails-app/taglib" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/target/plugins/resources-1.2.RC2">
+      <sourceFolder url="file://$MODULE_DIR$/target/plugins/resources-1.2.RC2/src/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/plugins/resources-1.2.RC2/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/plugins/resources-1.2.RC2/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/plugins/resources-1.2.RC2/grails-app/taglib" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/target/plugins/webxml-1.4.1">
       <sourceFolder url="file://$MODULE_DIR$/target/plugins/webxml-1.4.1/src/groovy" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/target/plugins/zipped-resources-1.0">
+      <sourceFolder url="file://$MODULE_DIR$/target/plugins/zipped-resources-1.0/grails-app/i18n" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -91,6 +104,8 @@
           <root url="jar://$USER_HOME$/.grails/ivy-cache/com.yammer.dropwizard/dropwizard-views/jars/dropwizard-views-0.6.1.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/com.yammer.metrics/metrics-jersey/jars/metrics-jersey-2.2.0.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.freemarker/freemarker/jars/freemarker-2.3.19.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/com.google.code.gson/gson/jars/gson-2.2.2.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.liquibase/liquibase-core/jars/liquibase-core-2.0.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

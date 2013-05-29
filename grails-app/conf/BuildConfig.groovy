@@ -5,29 +5,32 @@ grails.project.source.level = 1.6
 
 grails.project.dependency.resolution = {
 
-	inherits 'global', {
-		excludes 'grails-plugin-log4j', 'log4j'
-	}
-	log 'warn'
-	checksums true
+    inherits 'global', {
+        excludes 'grails-plugin-log4j', 'log4j'
+    }
+    log 'warn'
+    checksums true
 
-	repositories {
-		inherits true
-		grailsPlugins()
-		grailsHome()
-		grailsCentral()
-	}
+    repositories {
+        inherits true
+        grailsPlugins()
+        grailsHome()
+        grailsCentral()
+    }
 
-	dependencies {}
+    dependencies {}
 
-	plugins {
-//        grails.plugin.location.logback = "home/barry/workspace/grails-logback"
-//        grails.plugin.location.dropwizard = "home/barry/workspace/grails-dropwizard"
-        runtime ":hibernate:$grailsVersion"
-		runtime ':jquery:1.8.0'
-		runtime ':resources:1.1.6'
+    plugins {
+        compile ':gson:1.1.4'
+
+        runtime ":hibernate:$grailsVersion",
+                ':resources:1.2.RC2',
+                ':jquery:1.8.3',
+//                ':cached-resources:1.0',
+                ':zipped-resources:1.0',
+                ':database-migration:1.3.2'
 
         compile ':angular-scaffolding:1.0-SNAPSHOT'
         compile ':dropwizard:0.1'
-	}
+    }
 }
