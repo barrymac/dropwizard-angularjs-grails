@@ -11,7 +11,7 @@
     <r:require module="angular-scaffolding"/>
 </head>
 
-<body data-ng-app="scaffolding" data-base-url="${createLink(uri: '/../dropwizard/people/')}">
+<body data-ng-app="scaffolding" data-base-url="${createLink(uri: '/person/')}">
 <a href="#list-person" class="skip" tabindex="-1"><g:message code="default.link.skip.label"
                                                              default="Skip to content&hellip;"/></a>
 

@@ -14,6 +14,8 @@ import javax.ws.rs.core.MediaType
 @Produces(MediaType.APPLICATION_JSON)
 class PeopleListDropwizardResource {
 
+    def personService
+
     @POST
     PersonDTO createPerson(PersonDTO dto) {
         Person person = personService.create(dto)
