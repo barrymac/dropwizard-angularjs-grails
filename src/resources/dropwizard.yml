@@ -1,0 +1,119 @@
+http:
+   port: 8080
+
+#   adminPort: 8081
+
+#   2-1000000
+#   maxThreads: 1024
+
+#   1-1000000
+#   minThreads: 8
+
+#   rootPath: /*
+
+#   one of blocking, legacy, legacy+ssl, nonblocking, nonblocking+ssl
+#   connectorType: blocking
+
+#   maxIdleTime: 200s
+
+#   1-128
+#   acceptorThreads: 1
+
+#   -Thread.NORM_PRIORITY-Thread.NORM_PRIORITY)
+#   acceptorThreadPriorityOffset: 0
+
+#   min -1
+#   acceptQueueSize: -1
+
+#   min 1
+#   maxBufferCount: 1024
+
+#   requestBufferSize: 16KB
+#   requestHeaderBufferSize: 6KB
+#   responseBufferSize: 32KB
+#   responseHeaderBufferSize: 6KB
+
+#   reuseAddress: true
+#   soLingerTime: null
+#   lowResourcesConnectionThreshold: 0
+#   lowResourcesMaxIdleTime: 0s
+#   shutdownGracePeriod: 2s
+#   useServerHeader: false
+#   useDateHeader: true
+#   useForwardedHeaders: true
+#   useDirectBuffers: true
+#   bindHost: null
+#   adminUsername: null
+#   adminPassword: null
+
+#   requestLog:
+#      console:
+#         enabled: true
+#         threshold: Level.ALL
+#         timeZone: UTC
+#         logFormat: null
+#      file:
+#         enabled: false
+#         threshold: Level.ALL
+#         currentLogFilename: null
+#         archive: true
+#         archivedLogFilenamePattern: null
+#         # 1-50
+#         archivedFileCount: 5
+#         timeZone: UTC
+#         logFormat: null
+#
+#      syslog
+#         enabled: false
+#         threshold: Level.ALL
+#         host: localhost
+#         # auth, authpriv, daemon, cron, ftp, lpr, kern, mail, news, syslog, user, uucp, local0, local1, local2, local3, local4, local5, local6, local7
+#         facility: local0
+#         timeZone: UTC
+#         logFormat: null
+
+#      timeZone: UTC
+
+#   gzip:
+#      enabled: true
+#      minimumEntitySize: 256B
+#      bufferSize: 8KB
+#      excludedUserAgents: ImmutableSet<String>
+#      compressedMimeTypes: ImmutableSet<String>
+
+#   ssl:
+#      keyStore: /path/to/file
+#      keyStorePassword: null
+#      keyManagerPassword: null
+#      keyStoreType: JKS
+#      trustStore: /path/to/file
+#      trustStorePassword
+#      trustStoreType: "JKS"
+#      needClientAuth: true/false
+#      wantClientAuth: true/false
+#      certAlias: null
+#      allowRenegotiate: true/false
+#      crlPath: /path/to/file
+#      crldpEnabled: true/false
+#      ocspEnabled: true/false
+#      maxCertPathLength:
+#      ocspResponderUrl:
+#      jceProvider:
+#      validatePeers
+#      supportedProtocols:
+#         - SSLv3
+#         - TLSv1
+#         - TLSv1.1
+#         - TLSv1.2
+
+#   contextParameters:
+#      ImmutableMap<String, String> 
+
+  # The type of connector to use. Other valid values are "nonblocking" or "legacy". In general, the
+  # blocking connector should be used for low-latency services with short request durations. The
+  # nonblocking connector should be used for services with long request durations or which
+  # specifically take advantage of Jetty's continuation support.
+  # If you need SSL support, you can either choose from "nonblocking+ssl" or "legacy+ssl".
+
+#resources:
+#   - helloResource
